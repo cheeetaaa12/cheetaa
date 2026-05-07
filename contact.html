@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi Cheeta Revo — siswa, creator, dan anggota aktif OSIS & ROHIS.">
+  <title>Kontak — Cheeta Revo</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a1a18'/><circle cx='62' cy='30' r='18' fill='%23b8f059'/></svg>">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html" class="logo">
+      <div class="logo-mark"></div>
+      <div class="logo-text">Cheeta<br>Revo</div>
+    </a>
+    <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="portfolio.html">Portofolio</a></li>
+        <li><a href="contact.html" class="active">Kontak</a></li>
+        <li><a href="contact.html" class="nav-cta">→ Hubungi Saya</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT PAGE -->
+  <main>
+    <div class="page-hero">
+      <div class="section-label">Kontak</div>
+    </div>
+
+    <div class="contact-layout">
+      <!-- INFO KIRI -->
+      <div class="contact-info">
+        <h2>Mari kita<br><em>ngobrol</em><br>bareng.</h2>
+        <p>
+          Punya topik menarik, pertanyaan, atau sekadar ingin menyapa? Saya terbuka untuk berbagai diskusi dan kerja sama.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-regular fa-envelope"></i></div>
+            <span>cheetarevo@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+            <span>Indonesia</span>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-brands fa-github"></i></div>
+            <a href="#" style="color:var(--text-muted);">github.com/cheetaaa12</a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></div>
+            <a href="#" style="color:var(--text-muted);">@cheeta.12</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM KANAN -->
+      <div>
+        <form class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" name="nama" placeholder="Nama lengkap kamu" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@contoh.com" autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subjek">Subjek</label>
+            <select id="subjek" name="subjek">
+            <option value="" disabled selected>Pilih topik...</option>
+            <option value="tugas">Bantuan Tugas</option>
+            <option value="project">Kerja Kelompok</option>
+            <option value="magang">Info Magang</option>
+            <option value="diskusi">Diskusi Santai</option>
+            <option value="belajar">Belajar Bareng</option>
+            <option value="teman">Cari Teman</option>
+            <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" placeholder="Ceritakan ide atau hal yang ingin kamu diskusikan..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            Kirim Pesan <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">Cheeta R.</div>
+    <div class="footer-links">
+      <a href="index.html">Beranda</a>
+      <a href="portfolio.html">Portofolio</a>
+      <a href="contact.html">Kontak</a>
+    </div>
+    <p class="footer-copy">© 2026 Cheeta Revo.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('open');
+    }
+
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('.btn-submit');
+      btn.textContent = '✓ Terkirim!';
+      btn.style.background = '#2d7a2d';
+      setTimeout(() => {
+        btn.innerHTML = 'Kirim Pesan <i class="fa-solid fa-paper-plane"></i>';
+        btn.style.background = '';
+        this.reset();
+      }, 3000);
+    });
+  </script>
+
+</body>
+</html>

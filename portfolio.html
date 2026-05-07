@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio & pengalaman organisasi Cheeta Revo.">
+  <title>Portofolio — Cheeta Revo</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a1a18'/><circle cx='62' cy='30' r='18' fill='%23b8f059'/></svg>">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html" class="logo">
+      <div class="logo-mark"></div>
+      <div class="logo-text">Cheeta<br>Revo</div>
+    </a>
+    <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="portfolio.html" class="active">Portofolio</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+        <li><a href="contact.html" class="nav-cta">→ Hubungi Saya</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <main>
+    <div class="page-hero">
+      <div class="section-label">Pengalaman & Karya</div>
+      <h1 class="section-title" style="margin-bottom:0.5rem;">Organisasi &<br><em>proyek yang</em><br>pernah saya jalani.</h1>
+      <p style="color:var(--text-muted); max-width:480px; line-height:1.7;display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;">
+        Dari kegiatan organisasi sekolah hingga proyek pengembangan game — inilah perjalanan saya bertumbuh, belajar, dan berkolaborasi.
+      </p>
+    </div>
+
+    <!-- PROJECTS GRID -->
+    <div class="projects-grid">
+
+      <!-- ROHANI ISLAM -->
+      <article class="project-card">
+        <div class="project-thumb" style="background: linear-gradient(135deg, #c8e6c8, #a8d5a2); font-size:3.5rem;">🕌</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Organisasi</span>
+            <span class="tag">Keagamaan</span>
+            <span class="tag">Sekolah</span>
+          </div>
+          <h2 class="project-title">Rohani Islam (ROHIS)</h2>
+          <p class="project-desc">
+            Aktif sebagai anggota Rohani Islam di sekolah. Berpartisipasi dalam berbagai kegiatan keagamaan seperti kajian rutin, peringatan hari besar Islam, dan kegiatan sosial berbasis nilai-nilai islami untuk mempererat ukhuwah di lingkungan sekolah.
+          </p>
+          <span class="project-link" style="cursor:default; border:none; color:var(--text-muted);">Pengalaman Organisasi</span>
+        </div>
+      </article>
+
+      <!-- OSIS -->
+      <article class="project-card">
+        <div class="project-thumb project-thumb-b" style="font-size:3.5rem;">🏫</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Organisasi</span>
+            <span class="tag">Kepemimpinan</span>
+            <span class="tag">Sekolah</span>
+          </div>
+          <h2 class="project-title">OSIS (Organisasi Siswa Intra Sekolah)</h2>
+          <p class="project-desc">
+            Berperan aktif dalam OSIS sebagai bagian dari penggerak kegiatan sekolah. Terlibat dalam perencanaan dan pelaksanaan berbagai event sekolah, pengembangan program siswa, serta melatih jiwa kepemimpinan dan kerja sama tim secara nyata.
+          </p>
+          <span class="project-link" style="cursor:default; border:none; color:var(--text-muted);">Pengalaman Organisasi</span>
+        </div>
+      </article>
+
+      <!-- PROJECT ALICE GAME -->
+      <article class="project-card">
+        <div class="project-thumb project-thumb-d" style="font-size:3.5rem;">🎮</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Project</span>
+            <span class="tag">Game Dev</span>
+            <span class="tag">Kolaborasi</span>
+          </div>
+          <h2 class="project-title">Project Alice — Membuat Game</h2>
+          <p class="project-desc">
+            Proyek kolaborasi pembuatan game bernama <strong>Alice</strong> bersama tim. Mengerjakan perancangan alur permainan, karakter, dan mekanisme gameplay. Proyek ini mengasah kemampuan berpikir logis, kerja sama tim, dan kreativitas dalam dunia pengembangan game.
+          </p>
+          <a href="#" class="project-link">Lihat Proyek <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">Cheeta R.</div>
+    <div class="footer-links">
+      <a href="index.html">Beranda</a>
+      <a href="portfolio.html">Portofolio</a>
+      <a href="contact.html">Kontak</a>
+    </div>
+    <p class="footer-copy">© 2026 Cheeta Revo.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
